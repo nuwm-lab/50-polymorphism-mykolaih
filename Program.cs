@@ -85,8 +85,9 @@ namespace Task08.RectangleParallelepiped
     public class Parallelepiped : Rectangle
     {
         private double _b3, _a3;
-        protected double B3 => _b3;
-        protected double A3 => _a3;
+        // expose third-dimension bounds publicly so external code/tests can read them
+        public double B3 => _b3;
+        public double A3 => _a3;
 
         public Parallelepiped() : base() { }
 
